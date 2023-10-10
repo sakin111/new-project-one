@@ -8,7 +8,6 @@ import './index.css'
 import Root from './component/Root/Root';
 import Home from './component/Home/Home';
 import Games from './component/Games/Games';
-import Next from './component/Next/Next';
 import Popularity from './component/Popularity/Popularity';
 import Login from './component/Login/Login';
 import Register from './component/Register/Register';
@@ -29,10 +28,7 @@ const router = createBrowserRouter([
         path:'/games',
         element: <Private><Games></Games></Private>
       },
-      {
-        path:'/next',
-        element:<Next></Next>
-      },
+      
       {
         path:'/popularity',
         element:<Popularity></Popularity>

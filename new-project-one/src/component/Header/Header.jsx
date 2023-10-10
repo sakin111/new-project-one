@@ -19,7 +19,6 @@ const Header = () => {
       const link =( <>
       
       <li><NavLink to='/'>Home</NavLink></li>
-      <li><NavLink to='/next'>Next Event</NavLink></li>
       <li><NavLink to='/popularity'>Popularity</NavLink></li>
       <li><NavLink to='/games'>Games</NavLink></li>
     
@@ -47,9 +46,9 @@ const Header = () => {
     </ul>
   </div>
   <div className="navbar-center">
-  <ul className="menu menu-horizontal px-1 gap-3">
+  <ul className="menu menu-horizontal px-1 gap-3 ml-16">
    
-    </ul>
+    
   {
     user ?<span >
   <a onClick={handleLogOut} className="btn btn-sm">sign out</a>
@@ -57,10 +56,9 @@ const Header = () => {
   : <Link to='/login'>
      <button className="btn btn-sm">login</button>
   </Link>
-    
-     
+      
   }
- 
+ </ul>
   </div>
 </div>
     );
